@@ -1,0 +1,12 @@
+A multi zone sampler. Select “Load folder” from module menu to automatically load samples folder.
+
+          Samples can be auto-mapped if the imported file names match this pattern:
+          Filename_Notenumber_Velocity.wav
+          • Filename: Any name that does not contain numbers or special characters.
+          • Notenumber: A number between 0 and 127 that will be mapped to the
+            corresponding key in Sampler. The root key will default to that key as well.
+          • Velocity: A number between 1 and 127. Imported samples will be sorted
+            to the velocity ranges 1..31, 32..63, 64..95 and 96..127.
+            There is no 1-to-1 mapping so that if you import 4 samples with
+            velocity 1, 2, 3 and 4 to the same note, they will be distributed
+            over the whole velocity range.
