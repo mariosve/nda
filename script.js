@@ -151,7 +151,7 @@ function toggleMainMenu(key, btn) {
 
 function showImage(itemName, mainKey, sectionKey) {
   const folder = `data/${toFolderName(mainKey)}/${toFolderName(sectionKey)}/`;
-  const file = `${toFolderName(itemName)}.png`;
+  const file = `${toFolderName(itemName)}.webp`;
   const path = folder + file;
   imagePreview.innerHTML = `<img src="${path}" alt="${itemName}" />`;
 }
